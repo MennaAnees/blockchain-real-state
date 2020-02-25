@@ -24,6 +24,8 @@
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
 
+const HDWalletProvider = require('truffle-hdwallet-provider');
+const mnemonic = 'guard area easily good piano slot shiver medal spirit easily stone actor';
 module.exports = {
   /**
    * Networks define how you connect to your ethereum client and let you set the
@@ -42,12 +44,13 @@ module.exports = {
     // tab if you use this network and you must also set the `host`, `port` and `network_id`
     // options below to some value.
     //
-     development: {
-      host: "127.0.0.1",     // Localhost (default: none)
-      port: 8545,            // Standard Ethereum port (default: none)
-      network_id: "*",       // Any network (default: none)
-     },
-
+    development: {
+      provider: function() {
+        return new HDWalletProvider(mnemonic, "http://127.0.0.1:8545/", 0, 10);
+      },
+      network_id: '*',
+      gas: 4500000
+    }
     // Another network with more advanced options...
     // advanced: {
       // port: 8777,             // Custom port
