@@ -514,7 +514,7 @@ contract ERC721Enumerable is ERC165, ERC721 {
 
 contract ERC721Metadata is ERC721Enumerable, usingOraclize {
     // TODO: Create private vars for token _name, _symbol, and _baseTokenURI (string)
-    uint256 private token;
+
     string private _name;
     string private _symbol;
     string private _baseTokenURI;
@@ -583,13 +583,13 @@ contract CustomERC721Token is
         "https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/"
     )
 {
-    function mint(address to, uint256 tokenId) public returns (bool){
-        require(
-            msg.sender == ownerOf(tokenId),
-            "You are not the owner of this contract"
-        );
+    function mint(address to, uint256 tokenId) public onlyOwner returns (bool) {
         _mint(to, tokenId);
         setTokenUri(tokenId);
-        return true;
+    }
+
+    function contractOwner() public onlyOwner returns (address) {
+        address owner = msg.sender;
+        return owner;
     }
 }
