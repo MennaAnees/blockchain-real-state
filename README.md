@@ -27,6 +27,8 @@ https://rinkeby.etherscan.io/token/0x9D8A4dEf5eFdF0589E1B7cFD9969C772322C035E
 
 5. mint 10 tokens using MEW: https://www.myetherwallet.com/
 
+![alt text](./screenshots/mew.png)
+
 6. openSea marketPlace storefront link: https://rinkeby.opensea.io/assets/test-erc721-token
 
 ![alt text](./screenshots/storefront.png)
