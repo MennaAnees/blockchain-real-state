@@ -37,6 +37,7 @@ https://rinkeby.opensea.io/assets/0x9D8A4dEf5eFdF0589E1B7cFD9969C772322C035E/1
 ![alt text](./screenshots/token.png)
 
 8. view 5 purchased tokens:
+
 https://rinkeby.opensea.io/assets/0x9D8A4dEf5eFdF0589E1B7cFD9969C772322C035E/1
 https://rinkeby.opensea.io/assets/0x9D8A4dEf5eFdF0589E1B7cFD9969C772322C035E/2
 https://rinkeby.opensea.io/assets/0x9D8A4dEf5eFdF0589E1B7cFD9969C772322C035E/3
@@ -45,6 +46,7 @@ https://rinkeby.opensea.io/assets/0x9D8A4dEf5eFdF0589E1B7cFD9969C772322C035E/5
 
 
 9. view other 5 non purchased tokens:
+
 https://rinkeby.opensea.io/assets/0x9D8A4dEf5eFdF0589E1B7cFD9969C772322C035E/6
 https://rinkeby.opensea.io/assets/0x9D8A4dEf5eFdF0589E1B7cFD9969C772322C035E/7
 https://rinkeby.opensea.io/assets/0x9D8A4dEf5eFdF0589E1B7cFD9969C772322C035E/8
